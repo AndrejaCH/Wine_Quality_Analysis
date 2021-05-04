@@ -97,17 +97,15 @@ Quick statistical summaries and ad-hoc analysis gives us glimpse overviews about
 </p>
 
 
-### The quality rating for red wine is slightly lower than for white wine
+***The quality rating for red wine is slightly lower than for white wine.***
 
-What level of acidity is associated with the highest quality?
+### What level of acidity is associated with the highest quality?
 
-In order to effectively answer this question I categorized pH values in the following categories: <br>
+Sometimes data points require categorization in order to perform data analysis and effectively answer questions. For this answer I categorized pH values in the following categories:  <br>
 High acidity level: 2.72 - 3.11<br>
 Moderate High acidity level: 3.12 - 3.21<br>
 Medium acidity level: 3.22 - 3.21<br>
 Low acidity level: 3.33 - 4.01<br>
-
-***Low level of acidity receives the highest mean quality rating.***
 
 <p align="center">
 <img src="Visuals/pH.PNG" width="25%" height="25%"> </p>
@@ -116,12 +114,14 @@ Low acidity level: 3.33 - 4.01<br>
 <i>Figure 7: Wine Quality Rating and pH.</i>
 </p>
 
+***Low level of acidity receives the highest mean quality rating.***
+
 ### Do wines with higher alcohol content receive better ratings?
 
-Another useful function in Python is `query`. With this function we can quickly filter data that we want to perform calculations on. We can find median value with `median` function and split data into two categories - wines with low alcohol content and wines with high alcohol content. We find the median value of alcohol lever at 10.3.Wines with higher alcohol content tend to have higher quality rating.
+Another useful function in Python is `query`. With this function we can quickly filter data that we want to perform calculations on. We can find median value with `median` function and split data into two categories - wines with low alcohol content and wines with high alcohol content. We find the median value of alcohol lever at 10.3. Wines with higher alcohol content tend to have higher quality rating.
 
 <p align="center">
-<img src="Visuals/alc.PNG" width="37%" height="37%"> </p>
+<img src="Visuals/alc.PNG" width="45%" height="45%"> </p>
 
 <p align="center">
 <i>Figure 8: Quality Rating and alcohol content/</i>
@@ -133,7 +133,7 @@ Another useful function in Python is `query`. With this function we can quickly 
 To answer this question I used a similar approach than in the question above. After finding a median value for residual sugar I split data into two parts and calculated the quality rating mean on those two datasets. Based on our calculations  Sweeter wines generally receive slightly higher ratings at 5.83 than low sugar wines with quality rating at 5.81. 
 
 <p align="center">
-<img src="Visuals/sweet.PNG" width="37%" height="37%"> </p>
+<img src="Visuals/sweet.PNG" width="45%" height="45%"> </p>
 
 <p align="center">
 <i>Figure 9: Quality Rating and Residual Sugar/</i>
