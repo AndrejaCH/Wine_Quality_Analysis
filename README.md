@@ -80,17 +80,20 @@ A great way to explore, to get familiar with the data, finding patterns and buil
 Using pandas `groupby` we can quickly group wine by type and calculate the mean of quality rating. Based on the calculations we can see that white wines have slightly higher quality ratings at 5.88 than red wines at 5.64.
 
 <p align="center">
-<img src="Visuals/quality.PNG" width="20%" height="20%"> </p>
+<img src="Visuals/quality.PNG" width="20%" height="20%"> <img src="Visuals/WineQuality.png" width="40%" height="40%"></p>
 
 <p align="center">
-<i>Figure 5: Wine Quality Rating.</i>
+<i>Figure 5 & 6: Wine Quality Rating Table and Chart.</i>
 </p>
 
-<p align="center">
-<img src="Visuals/WineQuality.png" width="40%" height="40%"> <img src="Visuals/WineQualityperType.png" width="40%" height="40%"></p>
+Quick statistical summaries and ad-hoc analysis gives us glimpse overviews about the data. However, data analysis often requires more detailed and complex computations. From the cart below *(Figure 6)* provides us more details about wine quality rating and frequency. The data was grouped by wine type (red or white) and additionally the calculations for quantity proportions were calculated per each group. We could easily perform similar complex computation on larger data sets with more data, for example, type of the grape, vintage, growing area, etc. 
+
 
 <p align="center">
-<i>Figure 6: Wine Quality Rating & Wine Quality Rating and Frequency.</i>
+<img src="Visuals/WineQualityperType.png" width="40%" height="40%"></p>
+
+<p align="center">
+<i>Figure 6:Wine Quality Rating and Frequency.</i>
 </p>
 
 
@@ -98,14 +101,13 @@ Using pandas `groupby` we can quickly group wine by type and calculate the mean 
 
 What level of acidity is associated with the highest quality?
 
-In order to effectively answer this question I categorized pH values in the following categories: 
+In order to effectively answer this question I categorized pH values in the following categories: <br>
 High acidity level: 2.72 - 3.11<br>
 Moderate High acidity level: 3.12 - 3.21<br>
 Medium acidity level: 3.22 - 3.21<br>
 Low acidity level: 3.33 - 4.01<br>
 
-### Low level of acidity receives the highest mean quality rating
-
+***Low level of acidity receives the highest mean quality rating.***
 
 <p align="center">
 <img src="Visuals/pH.PNG" width="25%" height="25%"> </p>
@@ -139,5 +141,5 @@ To answer this question I used a similar approach than in the question above. Af
 
 
 ## Conclusion 
-Wine quality analysis  [add add add]
+This analysis could be extended with the larger data set and more rich information for example  type of the grape, vintage, growing area, etc. 
 
