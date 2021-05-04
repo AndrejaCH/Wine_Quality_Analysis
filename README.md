@@ -143,5 +143,6 @@ To answer this question I used a similar approach than in the question above. Af
 ***Sweeter wines generally receive slightly higher ratings.***
 
 ## Conclusion 
-This analysis could be extended with the larger data set and more rich information for example  type of the grape, vintage, growing area, etc. 
+From this analysis we learned about wine quality rating and its association to various physicochemical tests. This analysis could be extended with the larger data set and more rich information for example type of the grape, vintage, growing area, etc. We could take similar computations  and apply them to new dataset and get even more detailed insights about the wines and its quality ratings. 
+
 
