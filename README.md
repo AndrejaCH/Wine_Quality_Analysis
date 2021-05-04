@@ -127,10 +127,11 @@ Another useful function in Python is `query`. With this function we can quickly 
 <i>Figure 8: Quality Rating and alcohol content/</i>
 </p>
 
+***Wines with higher alcohol content tend to have higher quality rating.***
  
 ### Do sweeter wines (more residual sugar) receive better ratings?
 
-To answer this question I used a similar approach than in the question above. After finding a median value for residual sugar I split data into two parts and calculated the quality rating mean on those two datasets. Based on our calculations  Sweeter wines generally receive slightly higher ratings at 5.83 than low sugar wines with quality rating at 5.81. 
+To answer this question I used a similar approach than in the question above. After finding a median value for residual sugar I split data into two parts and calculated the quality rating mean on those two datasets. Based on our calculations  at 5.83 than low sugar wines with quality rating at 5.81. 
 
 <p align="center">
 <img src="Visuals/sweet.PNG" width="45%" height="45%"> </p>
@@ -139,6 +140,7 @@ To answer this question I used a similar approach than in the question above. Af
 <i>Figure 9: Quality Rating and Residual Sugar/</i>
 </p>
 
+***Sweeter wines generally receive slightly higher ratings.***
 
 ## Conclusion 
 This analysis could be extended with the larger data set and more rich information for example  type of the grape, vintage, growing area, etc. 
