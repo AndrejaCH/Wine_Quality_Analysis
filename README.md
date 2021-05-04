@@ -4,6 +4,10 @@
 ## Project Overview 
 For this project I am analyzing two datasets from [UCI - Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/wine+quality). One dataset on red wine samples and the other on white wine samples from the north of Portugal. Each wine sample comes with a quality rating from 1 to 10 and results form several physicochemical tests. I will be analysing wine properties such as alcohol content, acidity level and residual sugar and how these correlate to wine quality.
 
+<p align="center">
+<img src="Visuals/Wine.PNG" width="50%" height="50%"> </p>
+
+
 ***Attribute Information:***<br>
 - [x] fixed acidity<br>
 - [x] volatile acidity<br>
@@ -31,11 +35,11 @@ In order to perform sufficient data analysis data needs to be manipulated. In th
 As mentioned above EDA is an important step in data analytics. This critical step can save roughly 15–50% of time on a project because it provides a targeted plan for how to clean, sort, and create smaller datasets that are easier to work with. It is also extremely important to familiarize with the dataset, what various features mean and what values represent. Based on that we can conclude what questions can be answered from the data or do we need to collect more data in order to provide comprehensive analysis.
 
 In this analysis I will be focusing on the following questions:<br>
-- 🍷 What chemical characteristics are most important in predicting the quality of wine?<br>
-- 🍷 Is a certain type of wine (red or white) associated with higher quality?<br>
-- 🍷 Do wines with higher alcohol content receive better ratings?<br>
-- 🍷 Do sweeter wines (more residual sugar) receive better ratings?<br>
-- 🍷 What level of acidity is associated with the highest quality?<br>
+- 🍷 ***What chemical characteristics are most important in predicting the quality of wine?***<br>
+- 🍷 ***Is a certain type of wine (red or white) associated with higher quality?***<br>
+- 🍷 ***Do wines with higher alcohol content receive better ratings?***<br>
+- 🍷 ***Do sweeter wines (more residual sugar) receive better ratings?***<br>
+- 🍷 ***What level of acidity is associated with the highest quality?***<br>
 
 
 ## Answering Questions with Data and Drawing Conclusions
