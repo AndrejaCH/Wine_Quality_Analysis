@@ -85,6 +85,7 @@ Using pandas `groupby` we can quickly group wine by type and calculate the mean 
 <p align="center">
 <i>Figure 5 & 6: Wine Quality Rating Table and Chart</i>
 </p>
+
 🍷 ***The quality rating for red wine is slightly lower than for white wine.***
 
 Quick statistical summaries and ad-hoc analysis gives us glimpse overviews about the data. However, data analysis often requires more detailed and complex computations. From the cart below *(Figure 6)* provides us more details about wine quality rating and frequency. The data was grouped by wine type (red or white) and additionally the calculations for quantity proportions were calculated per each group. We could easily perform similar complex computation on larger data sets with more data, for example, type of the grape, vintage, growing area, etc. 
