@@ -83,9 +83,9 @@ Using pandas `groupby` we can quickly group wine by type and calculate the mean 
 <img src="Visuals/quality.PNG" width="20%" height="20%"> <img src="Visuals/WineQuality.png" width="40%" height="40%"></p>
 
 <p align="center">
-<i>Figure 5 & 6: Wine Quality Rating Table and Chart.</i>
+<i>Figure 5 & 6: Wine Quality Rating Table and Chart</i>
 </p>
-***The quality rating for red wine is slightly lower than for white wine.***
+🍷 ***The quality rating for red wine is slightly lower than for white wine.***
 
 Quick statistical summaries and ad-hoc analysis gives us glimpse overviews about the data. However, data analysis often requires more detailed and complex computations. From the cart below *(Figure 6)* provides us more details about wine quality rating and frequency. The data was grouped by wine type (red or white) and additionally the calculations for quantity proportions were calculated per each group. We could easily perform similar complex computation on larger data sets with more data, for example, type of the grape, vintage, growing area, etc. 
 
@@ -94,7 +94,7 @@ Quick statistical summaries and ad-hoc analysis gives us glimpse overviews about
 <img src="Visuals/WineQualityperType.png" width="40%" height="40%"></p>
 
 <p align="center">
-<i>Figure 6:Wine Quality Rating and Frequency.</i>
+<i>Figure 6:Wine Quality Rating and Frequency</i>
 </p>
 
 ### What level of acidity is associated with the highest quality?
@@ -109,10 +109,10 @@ Low acidity level: 3.33 - 4.01<br>
 <img src="Visuals/pH.PNG" width="25%" height="25%"> </p>
 
 <p align="center">
-<i>Figure 7: Wine Quality Rating and pH.</i>
+<i>Figure 7: Wine Quality Rating and pH</i>
 </p>
 
-***Low level of acidity receives the highest mean quality rating.***
+🍷 ***Low level of acidity receives the highest mean quality rating.***
 
 ### Do wines with higher alcohol content receive better ratings?
 
@@ -122,10 +122,10 @@ Another useful function in Python is `query`. With this function we can quickly 
 <img src="Visuals/alc.PNG" width="45%" height="45%"> </p>
 
 <p align="center">
-<i>Figure 8: Quality Rating and alcohol content/</i>
+<i>Figure 8: Quality Rating and alcohol content</i>
 </p>
 
-***Wines with higher alcohol content tend to have higher quality rating.***
+🍷 ***Wines with higher alcohol content tend to have higher quality rating.***
  
 ### Do sweeter wines (more residual sugar) receive better ratings?
 
@@ -135,10 +135,10 @@ To answer this question I used a similar approach than in the question above. Af
 <img src="Visuals/sweet.PNG" width="45%" height="45%"> </p>
 
 <p align="center">
-<i>Figure 9: Quality Rating and Residual Sugar/</i>
+<i>Figure 9: Quality Rating and Residual Sugar</i>
 </p>
 
-***Sweeter wines generally receive slightly higher ratings.***
+🍷 ***Sweeter wines generally receive slightly higher ratings.***
 
 ## Conclusion 
 From this analysis we learned about wine quality rating and its association to various physicochemical tests. This analysis could be extended with the larger data set and more rich information for example type of the grape, vintage, growing area, etc. We could take similar computations  and apply them to new dataset and get even more detailed insights about the wines and its quality ratings. 
