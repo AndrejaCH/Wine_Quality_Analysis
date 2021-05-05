@@ -4,6 +4,10 @@
 ## Project Overview 
 For this project I am analyzing two datasets from [UCI - Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/wine+quality). One dataset on red wine samples and the other on white wine samples from the north of Portugal. Each wine sample comes with a quality rating from 1 to 10 and results form several physicochemical tests. I will be analysing wine properties such as alcohol content, acidity level and residual sugar and how these correlate to wine quality.
 
+<p align="center">
+<img src="Visuals/Wine.PNG" width="50%" height="50%"> </p>
+
+
 ***Attribute Information:***<br>
 - [x] fixed acidity<br>
 - [x] volatile acidity<br>
@@ -31,11 +35,11 @@ In order to perform sufficient data analysis data needs to be manipulated. In th
 As mentioned above EDA is an important step in data analytics. This critical step can save roughly 15–50% of time on a project because it provides a targeted plan for how to clean, sort, and create smaller datasets that are easier to work with. It is also extremely important to familiarize with the dataset, what various features mean and what values represent. Based on that we can conclude what questions can be answered from the data or do we need to collect more data in order to provide comprehensive analysis.
 
 In this analysis I will be focusing on the following questions:<br>
-- 🍷 What chemical characteristics are most important in predicting the quality of wine?<br>
-- 🍷 Is a certain type of wine (red or white) associated with higher quality?<br>
-- 🍷 Do wines with higher alcohol content receive better ratings?<br>
-- 🍷 Do sweeter wines (more residual sugar) receive better ratings?<br>
-- 🍷 What level of acidity is associated with the highest quality?<br>
+- 🍷 ***What chemical characteristics are most important in predicting the quality of wine?***<br>
+- 🍷 ***Is a certain type of wine (red or white) associated with higher quality?***<br>
+- 🍷 ***Do wines with higher alcohol content receive better ratings?***<br>
+- 🍷 ***Do sweeter wines (more residual sugar) receive better ratings?***<br>
+- 🍷 ***What level of acidity is associated with the highest quality?***<br>
 
 
 ## Answering Questions with Data and Drawing Conclusions
@@ -76,32 +80,30 @@ A great way to explore, to get familiar with the data, finding patterns and buil
 Using pandas `groupby` we can quickly group wine by type and calculate the mean of quality rating. Based on the calculations we can see that white wines have slightly higher quality ratings at 5.88 than red wines at 5.64.
 
 <p align="center">
-<img src="Visuals/quality.PNG" width="20%" height="20%"> </p>
+<img src="Visuals/quality.PNG" width="20%" height="20%"> <img src="Visuals/WineQuality.png" width="40%" height="40%"></p>
 
 <p align="center">
-<i>Figure 5: Wine Quality Rating.</i>
+<i>Figure 5 & 6: Wine Quality Rating Table and Chart.</i>
+</p>
+***The quality rating for red wine is slightly lower than for white wine.***
+
+Quick statistical summaries and ad-hoc analysis gives us glimpse overviews about the data. However, data analysis often requires more detailed and complex computations. From the cart below *(Figure 6)* provides us more details about wine quality rating and frequency. The data was grouped by wine type (red or white) and additionally the calculations for quantity proportions were calculated per each group. We could easily perform similar complex computation on larger data sets with more data, for example, type of the grape, vintage, growing area, etc. 
+
+
+<p align="center">
+<img src="Visuals/WineQualityperType.png" width="40%" height="40%"></p>
+
+<p align="center">
+<i>Figure 6:Wine Quality Rating and Frequency.</i>
 </p>
 
-<p align="center">
-<img src="Visuals/WineQuality.png" width="40%" height="40%"> <img src="Visuals/WineQualityperType.png" width="40%" height="40%"></p>
+### What level of acidity is associated with the highest quality?
 
-<p align="center">
-<i>Figure 6: Wine Quality Rating & Wine Quality Rating and Frequency.</i>
-</p>
-
-
-### The quality rating for red wine is slightly lower than for white wine
-
-What level of acidity is associated with the highest quality?
-
-In order to effectively answer this question I categorized pH values in the following categories: 
+Sometimes data points require categorization in order to perform data analysis and effectively answer questions. For this answer I categorized pH values in the following categories:  <br>
 High acidity level: 2.72 - 3.11<br>
 Moderate High acidity level: 3.12 - 3.21<br>
 Medium acidity level: 3.22 - 3.21<br>
 Low acidity level: 3.33 - 4.01<br>
-
-### Low level of acidity receives the highest mean quality rating
-
 
 <p align="center">
 <img src="Visuals/pH.PNG" width="25%" height="25%"> </p>
@@ -110,30 +112,35 @@ Low acidity level: 3.33 - 4.01<br>
 <i>Figure 7: Wine Quality Rating and pH.</i>
 </p>
 
+***Low level of acidity receives the highest mean quality rating.***
+
 ### Do wines with higher alcohol content receive better ratings?
 
-Another useful function in Python is `query`. With this function we can quickly filter data that we want to perform calculations on. We can find median value with `median` function and split data into two categories - wines with low alcohol content and wines with high alcohol content. We find the median value of alcohol lever at 10.3.Wines with higher alcohol content tend to have higher quality rating.
+Another useful function in Python is `query`. With this function we can quickly filter data that we want to perform calculations on. We can find median value with `median` function and split data into two categories - wines with low alcohol content and wines with high alcohol content. We find the median value of alcohol lever at 10.3. Wines with higher alcohol content tend to have higher quality rating.
 
 <p align="center">
-<img src="Visuals/alc.PNG" width="37%" height="37%"> </p>
+<img src="Visuals/alc.PNG" width="45%" height="45%"> </p>
 
 <p align="center">
 <i>Figure 8: Quality Rating and alcohol content/</i>
 </p>
 
+***Wines with higher alcohol content tend to have higher quality rating.***
  
 ### Do sweeter wines (more residual sugar) receive better ratings?
 
-To answer this question I used a similar approach than in the question above. After finding a median value for residual sugar I split data into two parts and calculated the quality rating mean on those two datasets. Based on our calculations  Sweeter wines generally receive slightly higher ratings at 5.83 than low sugar wines with quality rating at 5.81. 
+To answer this question I used a similar approach than in the question above. After finding a median value for residual sugar I split data into two parts and calculated the quality rating mean on those two datasets. Based on our calculations  at 5.83 than low sugar wines with quality rating at 5.81. 
 
 <p align="center">
-<img src="Visuals/sweet.PNG" width="37%" height="37%"> </p>
+<img src="Visuals/sweet.PNG" width="45%" height="45%"> </p>
 
 <p align="center">
 <i>Figure 9: Quality Rating and Residual Sugar/</i>
 </p>
 
+***Sweeter wines generally receive slightly higher ratings.***
 
 ## Conclusion 
-Wine quality analysis  [add add add]
+From this analysis we learned about wine quality rating and its association to various physicochemical tests. This analysis could be extended with the larger data set and more rich information for example type of the grape, vintage, growing area, etc. We could take similar computations  and apply them to new dataset and get even more detailed insights about the wines and its quality ratings. 
+
 
